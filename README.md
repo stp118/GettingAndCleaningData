@@ -1,2 +1,7 @@
-# GettingAndCleaningData
-3rd course of Data Science Specialization
+# Description of run_Analysis.R
+The script can be run either from the directory containing the directory "UCI HAR Dataset" or from within that directory.
+It appends the contents of each file in "UCI HAR Dataset/train" to the contents of the corresponding file in "UCI HAR Dataset/test" and saves the data into into a file the directory "UCI HAR Dataset/joint". The name of the new file corresponds to the name of the original files but with the substring "test" or "train", respectively, replaced by "joint". Since the description of the project did not clearly state which data to merge, all files are included. If the "Inertial Signals" directory is to be skipped, the file search can simply be made non-recursive.
+Next, the file "features.txt" is read and the features containing the string "mean" or "std" are extracted in order to limit the scope of the data means and standard deviations only. The data from "joint/X_joint.txt" are then read and reduced to those referring to means or standard deviations.
+Next, using the number-string map in "activity_labels.txt" and the data in "joint/y_joint.txt", a list telling which row corresponds to which activity is created and added to the feature table.
+Next, the labels for the chosen subset of features (i.e. mean or standard deviation data) are post-processed for the sake of readability. Parenthesis are removed from the labels, and information on domain (time or frequency), feature type (mean or standard deviation) and direction (if applicable) follows the main part of the label.
+Finally, the average of the chosen features is computed for each combination of suobject and activity. The result is saved in "joint/average.txt".

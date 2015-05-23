@@ -1,0 +1,61 @@
+The data file "joint/averages.txt" contains aggregated data from the study described under http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones . From the original data, only mean values and standard deviations, with respect to time or frequency, of various measurements were considered and further aggregated by calculating the average with respect to each subject(i.e. participant in the experiment) and each activity.
+The data table is complete, i.e. each field contains valid data.
+Below a list of all data present in the data file "averages.txt", located in the directory "joint/", is provided.
+The name of each feature is followed by a pair of parentheses, which provide some specific information on the type of the data:
+1. The domain of the data, which may be time or frequency domain.
+2. The type of the data. "mean" refers to the arithmetic mean, and "std" to the standard deviation.
+3. For vectorial quantities, the direction represented by the associated data.
+
+List of parameters in the data file:
+"Subject"
+	Number representing one of the participants. Ranges from 1 to 30.
+"Activity"
+	String describing the activity done when the data were taken.
+"BodyAcc(time, mean, X)", "BodyAcc(time, mean, Y)", "BodyAcc(time, mean, Z)", "BodyAcc(time, std, X)", "BodyAcc(time, std, Y)", "BodyAcc(time, std, Z)"
+	Body acceleration, mean or standard deviation with respect to time, in X, Y or Z direction.
+"GravityAcc(time, mean, X)", "GravityAcc(time, mean, Y)", "GravityAcc(time, mean, Z)", "GravityAcc(time, std, X)", "GravityAcc(time, std, Y)", "GravityAcc(time, std, Z)"
+	Earth's gravitational acceleration, mean or standard deviation with respect to time, in X, Y or Z direction.
+"BodyAccJerk(time, mean, X)", "BodyAccJerk(time, mean, Y)", "BodyAccJerk(time, mean, Z)", "BodyAccJerk(time, std, X)", "BodyAccJerk(time, std, Y)", "BodyAccJerk(time, std, Z)"
+	Linear body acceleration signals, mean or standard deviation with respect to time, in X, Y or Z direction.
+"BodyGyro(time, mean, X)", "BodyGyro(time, mean, Y)", "BodyGyro(time, mean, Z)", "BodyGyro(time, std, X)", "BodyGyro(time, std, Y)", "BodyGyro(time, std, Z)", "BodyGyroJerk(time, mean, X)"
+	Angular velocity raw data, mean or standard deviation with respect to time, in X, Y or Z direction.
+"BodyGyroJerk(time, mean, Y)", "BodyGyroJerk(time, mean, Z)", "BodyGyroJerk(time, std, X)", "BodyGyroJerk(time, std, Y)", "BodyGyroJerk(time, std, Z)"
+	Angular velocity filtered data, mean or standard deviation with respect to time, in X, Y or Z direction.
+"BodyAccMag(time, mean)", "BodyAccMag(time, std)"
+	Magnitude of body acceleration, mean and standard deviation.
+"GravityAccMag(time, mean)", "GravityAccMag(time, std)"
+	Magnitude of gravitational acceleration, mean and standard deviation with respect to time.
+"BodyAccJerkMag(time, mean)", "BodyAccJerkMag(time, std)"
+	Magnitude of linear body acceleration, mean and standard deviation with respect to time.
+"BodyGyroMag(time, mean)", "BodyGyroMag(time, std)"
+	Magnitude of angular velocity (raw data), mean and standard deviation with respect to time.
+"BodyGyroJerkMag(time, mean)", "BodyGyroJerkMag(time, std)"
+	Magnitude of angular velocity (filtered data), mean and standard deviation with respect to time.
+"BodyAcc(freq, mean, X)", "BodyAcc(freq, mean, Y)", "BodyAcc(freq, mean, Z)", "BodyAcc(freq, std, X)", "BodyAcc(freq, std, Y)", "BodyAcc(freq, std, Z)"
+	Body acceleration, mean or standard deviation with respect to time and transformed into frequency domain, in X, Y or Z direction.
+"BodyAcc(freq, meanFreq, X)", "BodyAcc(freq, meanFreq, Y)", "BodyAcc(freq, meanFreq, Z)"
+	Body acceleration (raw data), mean with respect to frequency, in X, Y or Z direction.
+"BodyAccJerk(freq, mean, X)", "BodyAccJerk(freq, mean, Y)", "BodyAccJerk(freq, mean, Z)", "BodyAccJerk(freq, std, X)", "BodyAccJerk(freq, std, Y)", "BodyAccJerk(freq, std, Z)"
+	Body acceleration (filtered), mean with respect to time and transformed into frequency domain, in X, Y or Z direction.
+"BodyAccJerk(freq, meanFreq, X)", "BodyAccJerk(freq, meanFreq, Y)", "BodyAccJerk(freq, meanFreq, Z)"
+	Body acceleration (filtered), mean frequency, in X, Y or Z direction.
+"BodyGyro(freq, mean, X)", "BodyGyro(freq, mean, Y)", "BodyGyro(freq, mean, Z)", "BodyGyro(freq, std, X)", "BodyGyro(freq, std, Y)", "BodyGyro(freq, std, Z)"
+	Angular velocity raw data, mean or standard deviation with respect to time and transformed into frequency domain, in X, Y or Z direction.
+"BodyGyro(freq, meanFreq, X)", "BodyGyro(freq, meanFreq, Y)", "BodyGyro(freq, meanFreq, Z)"
+	Angular velocity (raw data), mean with respect to frequency, in X, Y or Z direction.
+"BodyAccMag(freq, mean)", "BodyAccMag(freq, std)"
+	Magnitude of body acceleration (raw data), mean and standard deviation with respect to time and transformed into frequency domain.
+"BodyAccMag(freq, meanFreq)"
+	Magnitude of body acceleration (raw data), mean with respect to frequency.
+"BodyBodyAccJerkMag(freq, mean)", "BodyBodyAccJerkMag(freq, std)"
+	Magnitude of body acceleration (filtered data), mean and standard deviation with respect to time and transformed into frequency domain.
+"BodyBodyAccJerkMag(freq, meanFreq)"
+	Magnitude of body acceleration (filtered data), mean with respect to frequency.
+"BodyBodyGyroMag(freq, mean)", "BodyBodyGyroMag(freq, std)"
+	Magnitude of angular velocity (raw data), mean and standard deviation with respect to time and transformed into frequency domain.
+"BodyBodyGyroMag(freq, meanFreq)"
+	Magnitude of angular velocity (raw data), mean with respect to frequency.
+"BodyBodyGyroJerkMag(freq, mean)", "BodyBodyGyroJerkMag(freq, std)"
+	Magnitude of angular velocity (filtered data), mean and standard deviation with respect to time and transformed to frequency.
+"BodyBodyGyroJerkMag(freq, meanFreq)"
+	Magnitude of body acceleration (filtered data), mean with respect to frequency.
